@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  height: 7vh;
+  width: 100vw;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+.header-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.header-links a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* .header-logo-img {
+  height: 5rem;
+} */
+
+.logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+main {
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.cards {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  max-width: 40rem;
+  height: 10rem;
+
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.card-img {
+  border-radius: 10px 0 0 10px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid: 1rem;
+
+  width: 100%;
+  height: 100%;
+}
+
+.card-info h2 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.card-info p {
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  width: 80%;
+}
+
+footer {
+  height: 20vh;
+  width: 100vw;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: white;
+}
+
+.footer-container {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-info {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-horario,
+.info-endereco {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-icon {
+  width: 1.5rem;
+}
+
+.footer-logo-img {
+  width: 10rem;
+}
+
+@media (min-width: 900px) {
+  .card {
+    max-width: calc(50% - 2rem);
+  }
+}
