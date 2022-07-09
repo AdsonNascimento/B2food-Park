@@ -57,21 +57,19 @@ main {
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
 }
 
 .cards {
   width: 80vw;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
 .card {
   display: flex;
-  width: 100%;
-  max-width: 40rem;
+  width: 40%;
   height: 10rem;
 
   background-color: rgba(0, 0, 0, 0.15);
@@ -80,6 +78,8 @@ main {
 
 .card-img {
   border-radius: 10px 0 0 10px;
+  width: 35%;
+  max-width: 15rem;
 }
 
 .card-info {
@@ -89,7 +89,7 @@ main {
   justify-content: center;
   grid: 1rem;
 
-  width: 100%;
+  width: 65%;
   height: 100%;
 }
 
@@ -152,9 +152,13 @@ a .footer-logo-img {
   width: 10rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 920px) {
   nav {
     width: calc(80% - 2rem);
+  }
+
+  .cards {
+    width: 80vw;
   }
   
   .card {
@@ -162,13 +166,22 @@ a .footer-logo-img {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 920px) {
   nav {
     justify-content: center;
   }
 
   .header-links {
     display: none;
+  }
+
+  .cards {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .card {
+    min-width: 40rem;
   }
 }
 
@@ -191,12 +204,22 @@ a .footer-logo-img {
   }
 
   .card {
-    flex-direction: column;
-    height: 30rem;
+    width: 100%;
+    min-width: auto;
   }
 
   .card-img {
-    border-radius: 10px 10px 0 0;
+    width: 50%;
+  }
+
+  .card-info {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .card-info h2 {
+    font-size: 2rem;
+    text-align: center;
   }
 
   footer {
